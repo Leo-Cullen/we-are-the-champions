@@ -60,7 +60,7 @@ h2 {
   justify-content: center;
 }
 
-.book {
+.endorsement {
   background-color: #eee;
   padding: 15px;
   margin-bottom: 10px;
@@ -69,7 +69,7 @@ h2 {
   font-weight: 600;
 }
 
-.book:hover {
+.endorsement:hover {
   cursor: pointer;
   background-color: #fc4103;
   color: #fff;
