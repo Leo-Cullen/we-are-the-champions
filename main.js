@@ -20,14 +20,30 @@ const endorsementsInDB = ref(database, "endorsements") // the 2 params are the d
  const publishButtonEl = document.getElementById("publish-btn")
  const endorsementsEl = document.getElementById("endorsements")
 
+// when user clicks in the input field, the placeholder text shoud disappear
+inputFieldEl.addEventListener( "click", function() {
+    inputFieldEl.value = ""
+} ) 
+
+// a fn to check if an element is empty
+/*
+function isEmpty(val){
+    return ((val !== '') && (val !== undefined) && (val.length > 0) && (val !== null));
+}
+*/
+
+
 // when publish button is clicked, add input field contents to our db
 // we need to use the push function with our ref and the data to be pushed as arguments
-
 publishButtonEl.addEventListener("click", function() {
+    // make sure textarea is not empty
+    if ( !inputFieldEl.value ) {
+        console.log( "you must enter some text") 
+    } else { 
     let inputValue = inputFieldEl.value
     // push user input to our db
     push(endorsementsInDB, inputValue)
-    
+}  
 })
 
 // firebase sends new data to its clients as soon as it is updated 

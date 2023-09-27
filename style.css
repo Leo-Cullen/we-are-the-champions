@@ -19,12 +19,29 @@ body {
 }
 
 h1,
+h2,
+#publish-btn {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
 h2 {
+  padding: 0;
   color: #fff;
 }
 
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 #freddy {
-  margin: 40px auto 20px;
+  margin: 40px auto 0;
   width: 90px;
   height: 90px;
 }
@@ -35,9 +52,15 @@ h2 {
 }
 
 #input-field,
+.endorsement {
+  font-family: "Inter", sans-serif;
+}
+
+#input-field,
 #publish-btn,
 #endorsements {
   width: 317px;
+  box-sizing: border-box;
 }
 
 #input-field {
@@ -47,13 +70,19 @@ h2 {
   color: #8f8f8f;
   border: none;
   margin-bottom: 12px;
-  padding: 0;
+  padding: 10px;
 }
 
 #publish-btn {
   height: 60px;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
+  background-color: #28a9f1;
+  color: #04131c;
+}
+
+#publish-btn:hover {
+  cursor: pointer;
 }
 
 #endorsements {
@@ -64,13 +93,12 @@ h2 {
   background-color: #eee;
   padding: 15px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 14px;
   text-align: left;
-  font-weight: 600;
 }
 
 .endorsement:hover {
   cursor: pointer;
-  background-color: #fc4103;
   color: #fff;
+  background-color: #444059;
 }
